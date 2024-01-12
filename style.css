@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    padding: 30px;
+    padding-right: 50px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnAddDialog{
+    border: 1px solid blue;
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+.btnAddDialog:hover{
+    background-color: rgb(7, 7, 218);
+    cursor: pointer;
+}
+.btnLaight{
+    border: 1px solid black;
+    padding: 8px 18px;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btnLaight:hover{
+    background-color: rgb(228, 225, 225);
+}
+.btnDark{
+    border: 1px solid black;
+    padding: 8px 18px;
+    font-size: 17px;
+    font-weight: 600;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: white;
+}
+.btnDark:hover{
+    background-color: rgb(228, 225, 225);
+}
+.main2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.left{
+    display: flex;
+    gap: 20px;
+}
+.selStatus{
+    padding: 5px 90px 10px 5px;
+    border: none;
+    outline: none;
+}
+.selCourse{
+    padding: 5px 90px 10px 5px;
+    border: none;
+    outline: none;
+}
+.inpSearch{
+    padding: 8px 50px 15px 10px;
+    border: none;
+    outline: none;
+}
+legend{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.divTitle{
+    margin-top: 30px;
+    display: flex;
+    gap: 315px;
+    background-color: rgb(233, 230, 230);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 20px;
+}
+/* .titleName{
+    margin-right: 200px;
+    background-color: gray;
+} */
+/* .titleCourse{
+    margin-right: 200px;
+} */
+.titleStatus{
+    margin-left: -130px;
+}
+.titlePhone{
+    margin-left: -120px;
+}
+.tdName{
+    font-size: 10px;
+    font-weight: 100;
+    padding: 16px 150px 16px 0px;
+    border-bottom: 2px solid gray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.table{
+    padding: 0px 10px;
+}
+.tdCourse{
+    padding: 20px 180px 20px 0px;
+    border-bottom: 2px solid gray;
+    font-size: 18px;
+}
+.tdStatus{
+    padding: 10px 190px 10px 0px;
+    border-bottom: 2px solid gray;
+}
+.statusActive{
+    background-color: green;
+    color: white;
+    font-size: 17px;
+    font-weight: 100;
+    padding: 3px 12px;
+    border-radius: 3px;
+    text-align: center;
+}
+.statusInactive{
+    background-color: rgb(112, 111, 111);
+    color: white;
+    font-size: 17px;
+    font-weight: 100;
+    padding: 3px 12px;
+    border-radius: 3px;
+    text-align: center;
+}
+.tdPhone{
+    padding: 10px 150px 10px 0px;
+    border-bottom: 2px solid gray;
+    font-size: 18px;
+}
+.tdAction{
+    padding: 10px 16px 10px 0px;
+    border-bottom: 2px solid gray;
+}
+.nameAction:hover{
+    cursor: pointer;
+    color: gray;
+    border-radius: 50%;
+}
+.dialogAdd{
+    border: none;
+    padding: 30px 40px;
+    margin: 100px;
+    margin-left: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px rgb(163, 161, 161);
+}
+.inpAddImg{
+    padding: 8px 150px 15px 5px;
+    border: none;
+}
+.selAddCourse{
+    padding: 5px 190px 12px 5px;
+    border: none;
+}
+.selAddStatus{
+    padding: 5px 195px 12px 5px;
+    border: none;
+}
+.inpAddName{
+    padding: 10px 150px 15px 10px;
+    border: 2px solid gray;
+}
+.inpAddPhone{
+    padding: 10px 150px 15px 10px;
+    border: 2px solid gray;
+}
+.btnAdd{
+    margin-left: 150px;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+.btnAdd:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.btnCancelAddDialog{
+    font-size: 20px;
+    padding: 4px 15px;
+}
+.closeDialogAdd:hover{
+    color: gray;
+    cursor: pointer;
+}
+.dialogAll{
+    border: none;
+    padding: 0;
+    margin: 300px 0px 0px 1000px;
+    box-shadow: 0px 0px 10px rgb(143, 141, 141);
+}
+.btnInfoDialog{
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    display: block;
+}
+.btnInfoDialog:hover{
+    background-color: rgb(238, 229, 229);
+    cursor: pointer;
+}
+.btnEditDialog{
+    border: none;
+    padding: 15px 35px;
+    padding-right: 94px;
+    font-size: 18px;
+    display: block;
+}
+.btnEditDialog:hover{
+    background-color: rgb(238, 229, 229);
+    cursor: pointer;
+}
+.btnDeleteDialog{
+    border: none;
+    padding: 15px 35px;
+    padding-right: 75px;
+    font-size: 18px;
+    display: block;
+    color: red;
+}
+.btnDeleteDialog:hover{
+    background-color: rgb(238, 229, 229);
+    cursor: pointer;
+}
+.dialogDelete{
+    border: none;
+    box-shadow: 0px 0px 10px gray;
+    margin: 250px 0px 0px 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.btnDelete{
+    border: 1px solid red;
+    color: red;
+    padding: 5px 15px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-left: 150px;
+}
+.btnDelete:hover{
+    background-color: red;
+    color: white;
+}
+.btnCancelDeleteDialog{
+    border: 1px solid green;
+    color: green;
+    padding: 5px 15px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.btnCancelDeleteDialog:hover{
+    background-color: green;
+    color: white;
+}
+.dialogInfo{
+    width: 350px;
+    border: none;
+    padding: 20px;
+    height: 617px;
+    text-align: center;
+    margin-left: 960px;
+}
+.imgInfo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px 0px 10px 0px;
+}
+.nameInfo{
+    margin: 0px 0px 15px 0px;
+}
+.courseInfo{
+    margin: 15px 0px;
+}
+.statusInfo{
+    margin: 15px 0px;
+}
+.phoneInfo{
+    margin: 15px 0px;
+}
+.btnEditDialogInfo{
+    margin-left: -150px;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 1px solid blue;
+    color: blue;
+    background-color: white;
+    border-radius: 5px;
+}
+.btnEditDialogInfo:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.btnDeleteDialogInfo{
+    border: 1px solid red;
+    padding: 5px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+}
+.btnDeleteDialogInfo:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.btnCloseDialogInfo:hover{
+    color: gray;
+    cursor: pointer;
+}
+.dialogEdit{
+    border: none;
+    padding: 30px 40px;
+    margin: 100px;
+    margin-left: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px rgb(122, 119, 119);
+}
+.inpEditImg{
+    padding: 10px 120px 10px 15px;
+    border: none;
+}
+.inpEditName{
+    padding: 15px 120px 10px 15px;
+    border: 2px solid gray;
+}
+.inpEditPhone{
+    padding: 10px 120px 10px 15px;
+    border: 2px solid gray;
+}
+.selEditCourse{
+    padding: 10px 178px 15px 10px;
+    border: none;
+}
+.selEditStatus{
+    padding: 10px 178px 15px 10px;
+    border: none;
+}
+.btnEdit{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    padding: 5px 20px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.btnEdit:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.btnCancelEditDialog{
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.btnCancelEditDialog:hover{
+    background-color: rgb(224, 219, 219);
+    color: black;
+}
+.closeDialogEdit:hover{
+    color: gray;
+    cursor: pointer;
+}
+.btnInfoDialogDark:hover{
+    background-color: gray;
+}
+.btnEditDialogDark:hover{
+    background-color: gray;
+}
+.btnDeleteDialogDark:hover{
+    background-color: gray;
+}

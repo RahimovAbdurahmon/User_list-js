@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table User</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="header">
+        <h1>User List</h1>
+        <div class="leftTop">
+            <button class="btnAddDialog">+ NEW</button>
+            <button class="btnLaight"><img src="./light_mode.png" alt="" style="margin-bottom: -5px;"> Light</button>
+            <button class="btnDark"><i class="fa-solid fa-moon"></i> Dark</button>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="left">
+            <fieldset class="fieldStatus">
+                <legend>Status</legend>
+                <select name="" id="" class="selStatus">
+                    <option value="All Status">All Satus</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+            </fieldset>
+            <fieldset class="fieldCourse">
+                <legend>course</legend>
+                <select name="" id="" class="selCourse">
+                    <option value="opAllCourse">All course</option>
+                    <option value="Js">Java Script</option>
+                    <option value="Jsx">React</option>
+                </select>
+            </fieldset>
+        </div>
+        <div class="raigth">
+            <fieldset class="fieldSearch">
+                <legend>search</legend>
+                <input type="search" class="inpSearch" placeholder="name,email,ets...">
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="divTitle">
+        <h3 class="titleName"><i class="fa-solid fa-user"></i> Name</h3>
+        <h3 class="titleCourse"><i class="fa-solid fa-graduation-cap"></i> Course</h3>
+        <h3 class="titleStatus"><i class="fa-solid fa-signal"></i> Status</h3>
+        <h3 class="titlePhone"><i class="fa-solid fa-phone"></i> Phone</h3>
+    </div>
+
+    <table class="table"></table>
+
+    <dialog class="dialogAdd">
+        <div style="display: flex;justify-content: space-between;">
+            <h3>Add New</h2>
+            <h1 class="closeDialogAdd">&times;</h1>
+        </div>
+        <fieldset>
+            <legend>image</legend>
+            <input type="text" placeholder=".png/.jpg/.jpeg" class="inpAddImg">
+        </fieldset><br>
+        <input type="text" placeholder="Full Name" class="inpAddName"><br><br>
+        <fieldset>
+            <legend>Course</legend>
+            <select name="" id="" class="selAddCourse">
+                <option value="">Choose Course</option>
+                <option value="Java script" class="opAddCourseJs">Java Script</option>
+                <option value="React" class="opAddCourseJsx">React</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>Status</legend>
+            <select name="" id="" class="selAddStatus">
+                <option value="chooseStatus">Choose Status</option>
+                <option value="Active"  class="opAddActiveStatus">Active</option>
+                <option value="Inactive" class="opAddInactiveStatus">Inactive</option>
+            </select>
+        </fieldset><br>
+        <input type="text" placeholder="phone" class="inpAddPhone"><br><br>
+        <button class="btnAdd">Save</button>
+        <button class="btnCancelAddDialog">Cancel</button>
+    </dialog>
+
+    <dialog class="dialogAll">
+        <button class="btnInfoDialog"><i class="fa-solid fa-user"></i>   View profile</button>
+        <button class="btnEditDialog"><i class="fa-regular fa-pen-to-square"></i>    Edit</button>
+        <button class="btnDeleteDialog"><i class="fa-solid fa-trash"></i>    Delete</button>
+    </dialog>
+
+
+    <dialog class="dialogDelete">
+        <h3 style="margin-bottom: 15px;">Are you sure to delete this user</h3>
+        <button class="btnDelete">Yes</button>
+        <button class="btnCancelDeleteDialog">No</button>
+    </dialog>
+    <dialog class="dialogInfo">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0px;">
+            <h1 class="btnCloseDialogInfo">&times;</h1>
+            <h3>User Info</h3>
+        </div>
+        <img src="" alt="" class="imgInfo">
+        <h2 class="nameInfo"></h2>
+        <div style="display: flex; justify-content: space-between;padding: 20px 0px; border-bottom: 1px solid gray; border-top: 1px solid gray;margin: 0px 0px 20px 0px;">
+            <div class="title">
+                <h3 style="margin: 15px 0px;"><i class="fa-solid fa-graduation-cap"></i> Course</h3>
+                <h3 style="margin: 15px 0px;"><i class="fa-solid fa-signal"></i> Status</h3>
+                <h3 style="margin: 15px 0px;"><i class="fa-solid fa-phone"></i> Phone</h3>
+            </div>
+            <div class="info">
+                <h3 class="courseInfo"></h3>
+                <h3 class="statusInfo"></h3>
+                <h3 class="phoneInfo"></h3>
+            </div>
+        </div>
+        <button class="btnEditDialogInfo"><i class="fa-regular fa-pen-to-square"></i> Edit</button>
+        <button class="btnDeleteDialogInfo"><i class="fa-solid fa-trash"></i> Delete</button>
+    </dialog>
+    
+    <dialog class="dialogEdit">
+        <div style="display: flex;justify-content: space-between;">
+            <h3>Edit User</h2>
+            <h1 class="closeDialogEdit">&times;</h1>
+        </div>
+        <fieldset>
+            <legend>image</legend>
+            <input type="text"class="inpEditImg">
+        </fieldset><br>
+        <input type="text"class="inpEditName"><br><br>
+        <fieldset>
+            <legend>Course</legend>
+            <select name="" id="" class="selEditCourse">
+                <option value="">Choose Course</option>
+                <option value="Java script" class="opAddCourseJs">Java Script</option>
+                <option value="React" class="opAddCourseJsx">React</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>Status</legend>
+            <select name="" id="" class="selEditStatus">
+                <option value="chooseStatus">Choose Status</option>
+                <option value="Active"  class="opAddActiveStatus">Active</option>
+                <option value="Inactive" class="opAddInactiveStatus">Inactive</option>
+            </select>
+        </fieldset><br>
+        <input type="text" class="inpEditPhone"><br><br>
+        <button class="btnEdit">Save</button>
+        <button class="btnCancelEditDialog">Cancel</button>
+    </dialog>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
